@@ -54,57 +54,128 @@ arkade downloads the correct version of a CLI for your OS and CPU.
 
 With automatic detection of: Windows / MacOS / Linux / Intel / ARM.
 
-```bash
-arkade get APP
-Use "arkade get TOOL" to download a tool or application:
-  argocd
-  argocd-autopilot
-  arkade
-  buildx
-  civo
-  docker-compose
-  doctl
-  faas-cli
-  flux
-  gh
-  helm
-  helmfile
-  hugo
-  inlets-pro
-  inletsctl
-  istioctl
-  k3d
-  k3sup
-  k9s
-  kail
-  kim
-  kind
-  kops
-  krew
-  kube-bench
-  kubebuilder
-  kubectl
-  kubectx
-  kubens
-  kubeseal
-  kustomize
-  linkerd2
-  mc
-  minikube
-  nats
-  nerdctl
-  opa
-  osm
-  pack
-  packer
-  polaris
-  popeye
-  stern
-  terraform
-  tkn
-  trivy
-  vagrant
-  yq
+
+```
+$ arkade get APP
+
++------------------+--------------------------------------------------------------+
+|       TOOL       |                         DESCRIPTION                          |
++------------------+--------------------------------------------------------------+
+| argocd           | Declarative, GitOps continuous delivery tool for Kubernetes. |
++------------------+--------------------------------------------------------------+
+| argocd-autopilot |                                                              |
++------------------+--------------------------------------------------------------+
+| arkade           | Portable marketplace for downloading your favourite devops   |
+|                  | CLIs and installing helm charts, with a single command.      |
++------------------+--------------------------------------------------------------+
+| buildx           | Docker CLI plugin for extended build capabilities with       |
+|                  | BuildKit.                                                    |
++------------------+--------------------------------------------------------------+
+| civo             | CLI for interacting with your Civo resources.                |
++------------------+--------------------------------------------------------------+
+| docker-compose   | Define and run multi-container applications with Docker.     |
++------------------+--------------------------------------------------------------+
+| doctl            | Official command line interface for the DigitalOcean API.    |
++------------------+--------------------------------------------------------------+
+| faas-cli         | Official CLI for OpenFaaS.                                   |
++------------------+--------------------------------------------------------------+
+| flux             | Continuous Delivery solution for Kubernetes powered by       |
+|                  | GitOps Toolkit.                                              |
++------------------+--------------------------------------------------------------+
+| gh               | GitHub’s official command line tool.                         |
++------------------+--------------------------------------------------------------+
+| helm             | Build and deploy functions to OpenFaaS.                      |
++------------------+--------------------------------------------------------------+
+| helmfile         | Deploy Kubernetes Helm Charts                                |
++------------------+--------------------------------------------------------------+
+| hugo             | Static HTML and CSS website generator.                       |
++------------------+--------------------------------------------------------------+
+| inlets-pro       | Cloud Native Tunnel for HTTP and TCP traffic.                |
++------------------+--------------------------------------------------------------+
+| inletsctl        | Automates the task of creating an exit-server (tunnel        |
+|                  | server) on public cloud infrastructure.                      |
++------------------+--------------------------------------------------------------+
+| istioctl         | Service Mesh to establish a programmable, application-aware  |
+|                  | network using the Envoy service proxy.                       |
++------------------+--------------------------------------------------------------+
+| k3d              | Helper to run Rancher Lab's k3s in Docker.                   |
++------------------+--------------------------------------------------------------+
+| k3sup            | Bootstrap Kubernetes with k3s over SSH < 1 min.              |
++------------------+--------------------------------------------------------------+
+| k9s              | Provides a terminal UI to interact with your Kubernetes      |
+|                  | clusters.                                                    |
++------------------+--------------------------------------------------------------+
+| kail             | Kubernetes log viewer.                                       |
++------------------+--------------------------------------------------------------+
+| kim              | Build container images inside of Kubernetes. (Experimental)  |
++------------------+--------------------------------------------------------------+
+| kind             | Run local Kubernetes clusters using Docker container nodes.  |
++------------------+--------------------------------------------------------------+
+| kops             | Production Grade K8s Installation, Upgrades, and Management. |
++------------------+--------------------------------------------------------------+
+| krew             | Package manager for kubectl plugins.                         |
++------------------+--------------------------------------------------------------+
+| kube-bench       | Checks whether Kubernetes is deployed securely by running    |
+|                  | the checks documented in the CIS Kubernetes Benchmark.       |
++------------------+--------------------------------------------------------------+
+| kubebuilder      | Framework for building Kubernetes APIs using custom resource |
+|                  | definitions (CRDs).                                          |
++------------------+--------------------------------------------------------------+
+| kubectl          | Run commands against Kubernetes clusters                     |
++------------------+--------------------------------------------------------------+
+| kubectx          | Faster way to switch between clusters.                       |
++------------------+--------------------------------------------------------------+
+| kubens           | Switch between Kubernetes namespaces smoothly.               |
++------------------+--------------------------------------------------------------+
+| kubeseal         | A Kubernetes controller and tool for one-way encrypted       |
+|                  | Secrets                                                      |
++------------------+--------------------------------------------------------------+
+| kustomize        | Customization of kubernetes YAML configurations              |
++------------------+--------------------------------------------------------------+
+| linkerd2         | Ultralight, security-first service mesh for Kubernetes.      |
++------------------+--------------------------------------------------------------+
+| mc               | MinIO Client is a replacement for ls, cp, mkdir, diff and    |
+|                  | rsync commands for filesystems and object storage.           |
++------------------+--------------------------------------------------------------+
+| minikube         | Runs the latest stable release of Kubernetes, with support   |
+|                  | for standard Kubernetes features.                            |
++------------------+--------------------------------------------------------------+
+| nats             | Utility to interact with and manage NATS.                    |
++------------------+--------------------------------------------------------------+
+| nerdctl          | Docker-compatible CLI for containerd, with support for       |
+|                  | Compose                                                      |
++------------------+--------------------------------------------------------------+
+| opa              | General-purpose policy engine that enables unified,          |
+|                  | context-aware policy enforcement across the entire stack.    |
++------------------+--------------------------------------------------------------+
+| osm              | Open Service Mesh uniformly manages, secures, and gets       |
+|                  | out-of-the-box observability features.                       |
++------------------+--------------------------------------------------------------+
+| pack             | Build apps using Cloud Native Buildpacks.                    |
++------------------+--------------------------------------------------------------+
+| packer           | Build identical machine images for multiple platforms from a |
+|                  | single source configuration.                                 |
++------------------+--------------------------------------------------------------+
+| polaris          | Run checks to ensure Kubernetes pods and controllers are     |
+|                  | configured using best practices.                             |
++------------------+--------------------------------------------------------------+
+| popeye           | Scans live Kubernetes cluster and reports potential issues   |
+|                  | with deployed resources and configurations.                  |
++------------------+--------------------------------------------------------------+
+| stern            | Multi pod and container log tailing for Kubernetes.          |
++------------------+--------------------------------------------------------------+
+| terraform        | Infrastructure as Code for major cloud providers.            |
++------------------+--------------------------------------------------------------+
+| tkn              | A CLI for interacting with Tekton.                           |
++------------------+--------------------------------------------------------------+
+| trivy            | Vulnerability Scanner for Containers and other Artifacts,    |
+|                  | Suitable for CI.                                             |
++------------------+--------------------------------------------------------------+
+| vagrant          | Tool for building and distributing development environments. |
++------------------+--------------------------------------------------------------+
+| yq               | Portable command-line YAML processor.                        |
++------------------+--------------------------------------------------------------+
+Use 'arkade get TOOL' to download a tool or application.
 ```
 
 > This is a time saver compared to searching for download pages every time you need a tool.
